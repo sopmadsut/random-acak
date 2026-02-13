@@ -1,0 +1,37 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="3^9P%-$zNDi#bi@SHo,}">DiceValue</variable><variable id="]i)Cf[Z4A7mH@[wgGylG">list</variable><variable id=":N)]VhJ_8FsxM?c!S;=1">myImage</variable></variables><block type="function_definition" id="hkqkIYJuCpZ1YFiP/Yqr" x="-480" y="-97"><mutation name="SetDicePattern" functionid="zv?D6,Q*cy)1PAmB|5N5"></mutation><field name="function_name">SetDicePattern</field><statement name="STACK"><block type="variables_set" id="Z6v`ei8~1+Q{#GBKDmfW"><field name="VAR" id="]i)Cf[Z4A7mH@[wgGylG">list</field><value name="VALUE"><block type="lists_create_with" id="M:d+XLZYT;T*a)vGx:~C" inline="false"><mutation items="6" horizontalafter="3"></mutation><value name="ADD0"><block type="device_build_image" id="PA00_RCA3!(P|xj-tR8%"><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        . . # . . 
+        . . . . . 
+        . . . . .
+        `</field></block></value><value name="ADD1"><block type="device_build_image" id="-ChIaB;~gTFOWPAkhq`c"><field name="LEDS">`
+        . . . . . 
+        . # . . . 
+        . . . . . 
+        . . . # . 
+        . . . . .
+        `</field></block></value><value name="ADD2"><block type="device_build_image" id="x0Zl!Co3qpwuONHf((y="><field name="LEDS">`
+        . . . . . 
+        . . . # . 
+        . . # . . 
+        . # . . . 
+        . . . . .
+        `</field></block></value><value name="ADD3"><block type="device_build_image" id="tljQ]zW{FA$@~r[liv@T"><field name="LEDS">`
+        . . . . . 
+        . # . # . 
+        . . . . . 
+        . # . # . 
+        . . . . .
+        `</field></block></value><value name="ADD4"><block type="device_build_image" id="D9W)KYPS$)6Dkx4nxV.Q"><field name="LEDS">`
+        . . . . . 
+        . # . # . 
+        . . # . . 
+        . # . # . 
+        . . . . .
+        `</field></block></value><value name="ADD5"><block type="device_build_image" id="$F~bfQ|UZW5tp*YN.G{H"><field name="LEDS">`
+        . . . . . 
+        . # . # . 
+        . # . # . 
+        . # . # . 
+        . . . . .
+        `</field></block></value></block></value></block></statement></block><block type="pxt-on-start" id="?I},oN^eI-}y~+::GX!C" x="0" y="0"><statement name="HANDLER"><block type="function_call" id="Urw.Y#m3E23xT.RcQNA/"><mutation name="SetDicePattern" functionid="zv?D6,Q*cy)1PAmB|5N5"></mutation><next><block type="function_call" id="$NjBizb8xN~iA:7nmzPf"><mutation name="RollDice" functionid="_KLi!3hbYFYSF+cQjrqB"></mutation></block></next></block></statement></block><block type="function_definition" id="dGi9$`UOeHC#TYdj.*4|" x="-2" y="189"><mutation name="RollDice" functionid="_KLi!3hbYFYSF+cQjrqB"></mutation><field name="function_name">RollDice</field><statement name="STACK"><block type="device_show_image_offset" id="H`pxq`JKhVNyWf8O4$)c"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true"></mutation><value name="sprite"><block type="lists_index_get" id="lXTUOa[DLn}dIvx19emS"><value name="LIST"><block type="variables_get" id="Sm?(f7:?}SaCkGF[n!]="><field name="VAR" id="]i)Cf[Z4A7mH@[wgGylG">list</field></block></value><value name="INDEX"><shadow type="math_number" id="[IelNWe6YV3G,U;!EpYm"><field name="NUM">0</field></shadow><block type="device_random" id="FmjMkD^=NL0oL.^:n_LQ"><value name="min"><shadow type="math_number" id="U8dt(QIoZxPu_Mzh2g_="><field name="NUM">0</field></shadow></value><value name="limit"><shadow type="math_number" id="pZ1@vdN,YMEkW,5^-+pv"><field name="NUM">5</field></shadow></value></block></value></block></value><value name="offset"><shadow type="math_number" id="N:veA6WAw*ZZ1.XH+{T^"><field name="NUM">0</field></shadow></value><value name="interval"><shadow type="math_number" id="W{H{m(U~k#0kjtJ[m!lo"><field name="NUM">400</field></shadow></value></block></statement></block><block type="device_gesture_event" id="Ex8T~^iG4JQb?=-IY76@" x="-5" y="362"><field name="NAME">Gesture.Shake</field><statement name="HANDLER"><block type="function_call" id="`|JJ:1rRH3h#IG5gx0BO"><mutation name="RollDice" functionid="_KLi!3hbYFYSF+cQjrqB"></mutation></block></statement></block></xml>
